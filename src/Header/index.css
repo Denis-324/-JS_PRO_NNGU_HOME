@@ -1,0 +1,34 @@
+.header {
+  background-color: rgb(202, 44, 118);
+}
+.header__row {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+}
+.header__logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: antiquewhite;
+  align-self: center;
+}
+.header__nav {
+  align-self: center;
+}
+.nav__list {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.nav__list li {
+  color: aliceblue;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav__list li:hover {
+  color: rgb(137, 192, 105);
+  cursor: pointer;
+}
