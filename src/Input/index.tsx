@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { registrationData } from "../object";
 
 type InputPropsType = {
   inputPlaceholder: string;
@@ -17,8 +18,14 @@ const Input: React.FC<InputPropsType> = (props) => {
     setPassword(e.target.value);
     setCheckPassword(e.target.value);
   };
+  registrationData.name = name;
+  registrationData.surname = surname;
+  registrationData.email = email;
+  registrationData.password = password;
+  registrationData.checkPassword = checkPassword;
 
   const { inputPlaceholder, inputType } = props;
+
   return (
     <input
       onChange={changeHandler}
