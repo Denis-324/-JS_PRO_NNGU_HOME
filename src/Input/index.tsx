@@ -1,34 +1,15 @@
-import React, { useState } from "react";
-import { registrationData } from "../object";
+import React from "react";
 
 type InputPropsType = {
   inputPlaceholder: string;
   inputType: string;
+  onChangeFn: any;
 };
 const Input: React.FC<InputPropsType> = (props) => {
-  const [name, setName] = useState("");
-  const [surname, setSurname] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [checkPassword, setCheckPassword] = useState("");
-  const changeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setName(e.target.value);
-    setSurname(e.target.value);
-    setEmail(e.target.value);
-    setPassword(e.target.value);
-    setCheckPassword(e.target.value);
-  };
-  registrationData.name = name;
-  registrationData.surname = surname;
-  registrationData.email = email;
-  registrationData.password = password;
-  registrationData.checkPassword = checkPassword;
-
-  const { inputPlaceholder, inputType } = props;
-
+  const { inputPlaceholder, inputType, onChangeFn } = props;
   return (
     <input
-      onChange={changeHandler}
+      onChange={onChangeFn}
       className="main__input"
       placeholder={inputPlaceholder}
       type={inputType}
