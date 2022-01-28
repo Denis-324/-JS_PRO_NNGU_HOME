@@ -1,0 +1,28 @@
+.box {
+  width: 200px;
+  height: 330px;
+  border: 1px solid rgb(170, 167, 167);
+  padding: 10px;
+  border-radius: 10px;
+}
+.img_box {
+  width: 180px;
+  height: 250px;
+  margin-bottom: 10px;
+}
+.img_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.title {
+  color: rgb(103, 105, 105);
+  margin-bottom: 10px;
+}
+.price {
+  font-size: 16px;
+  font-weight: 700;
+}
+a .box .price {
+  color: rgb(27, 27, 27);
+}

@@ -1,9 +1,11 @@
 .footer {
   background-color: rgb(202, 44, 118);
-  padding: 15px 0 15px 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.footer__info {
-  text-align: center;
+.info {
   color: rgb(245, 234, 234);
   font-weight: 600;
 }
